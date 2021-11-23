@@ -1,0 +1,7 @@
+<h2>Library</h2>
+<div class="book" *ngFor="let book of libraryBooks | async">
+  <p>{{ book.volumeInfo.authors }}</p>
+  <p>{{ book.volumeInfo.title }}</p>
+
+  <button class="btn btn-primary" (click)="onAdd(book)">+</button>
+</div>

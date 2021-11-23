@@ -1,0 +1,8 @@
+<h2>Bookshelf</h2>
+<div class="book" *ngFor="let book of myBooks | async">
+    <p>{{ book.volumeInfo.authors }}</p>
+    <p>{{ book.volumeInfo.title }}</p>
+  
+    <button class="btn btn-primary" (click)="onRemove(book.id)">-</button>
+  </div>
+  
